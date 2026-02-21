@@ -1,0 +1,16 @@
+body{
+	background-color:black;
+	color:yellow;
+     }
+input{
+	color:silver;
+	background-color:black;
+	border:none;
+	outline:none;
+	width:90vw;
+	font-size:17px;
+	}
+p{
+	white-space:pre-wrap;
+	font-size:17px;
+	}

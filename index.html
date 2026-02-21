@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>🌿𝙽𝚒𝚛𝚊𝚗𝚓𝚊𝚗 𝙲𝚛𝚎𝚊𝚝𝚒𝚘𝚗𝚜🌿</title>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="logo.png">
+		<link rel="stylesheet" href="index.css">
+		<link rel="manifest" href="js.json" />	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="main">
+		<p style="color:cyan">𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 𝙾𝚗𝚕𝚒𝚗𝚎 𝚃𝚎𝚛𝚖𝚒𝚗𝚊𝚕<br>𝚐𝚎𝚝 𝚑𝚎𝚕𝚙 𝚝𝚑𝚛𝚘𝚞𝚐𝚑<b> <u><span style="color:violet">𝚑𝚎𝚕𝚙</span></u></b></p>
+		</div>
+		<script src="index.js"></script>
+	</body>
+	<script>
+	let p;
+        window.addEventListener('beforeinstallprompt',e=>{
+                e.preventDefault();
+                p=e;
+        });
+        function install(){
+                if(p){
+                        p.prompt();
+                }
+        }
+        if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('js.js');
+        }
+	</script>
+</html>
