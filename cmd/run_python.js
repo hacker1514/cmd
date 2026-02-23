@@ -19,10 +19,16 @@ sys.stderr = StringIO()
     if (stderr) {
       output(stderr.trim(), "red");
     } else {
+
       output(stdout.trim(), "#FFB000");
     }
 
   } catch (err) {
     output(err.toString(), "red");
   }
+}
+
+function  rp(code){
+	code=code.replace("python ","");
+	let op=run_python(code);
 }

@@ -99,6 +99,11 @@ function k(input) {
 		return;
 		}
 
+	if((command.split(' '))[0]==="python"){
+		rp(command);
+		return;
+		}
+
 	if(command==="upload"){
 		upload();
 		return;
