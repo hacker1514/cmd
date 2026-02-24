@@ -20,6 +20,8 @@ function starter(){
 			fileMemory[fname]=val;
 		}
 	}
+
+	loadDatabase();
 }
 
 function uf(fname){

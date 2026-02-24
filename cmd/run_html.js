@@ -17,7 +17,3 @@ function run_html(code){
 	iframe.srcdoc = html;
 }
 
-function sql(){
-	window.open("https://hacker1514.github.io/sp/db.html","_self");
-	output("𝙴𝚗𝚓𝚘𝚢 𝚂𝚚𝚕 !","orange");
-	}

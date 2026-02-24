@@ -7,6 +7,8 @@ function run(file){
 			run_js(fileMemory[fn]);
 		}else if(file[1]==="html"){
 			run_html(fileMemory[fn]);
+		}else if(file[1]==="sql"){
+			run_sql(fileMemory[fn]);
 		}else{
 			output("𝙰𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎  𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜 :\n\n𝙿𝚢𝚝𝚑𝚘𝚗\n𝙹𝚊𝚟𝚊 𝚜𝚌𝚛𝚒𝚙𝚝\n𝙷𝚝𝚖𝚕\n𝚜𝚚𝚕\n\n𝚆𝚘𝚛𝚔 𝚒𝚜 𝚐𝚘𝚒𝚗𝚐 𝚘𝚗......","lime");
 		}
