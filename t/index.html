@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>🌿𝙽𝚒𝚛𝚊𝚗𝚓𝚊𝚗 𝙲𝚛𝚎𝚊𝚝𝚒𝚘𝚗𝚜🌿</title>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="logo.png">
+		<link rel="stylesheet" href="index.css">
+		<link rel="manifest" href="js.json" />	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body onload="starter()">
+		<div id="main">
+		<p style="color:cyan">𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 𝙾𝚗𝚕𝚒𝚗𝚎 𝚃𝚎𝚛𝚖𝚒𝚗𝚊𝚕<br>𝚐𝚎𝚝 𝚑𝚎𝚕𝚙 𝚝𝚑𝚛𝚘𝚞𝚐𝚑<b> <u><span style="color:violet">𝚑𝚎𝚕𝚙</span></u></b></p>
+		</div>
+	
+<iframe id="html_output" 
+style="display:none;background:white;"
+sandbox="allow-scripts">
+</iframe>
+
+		<div id="files">
+		</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+		<script src="index.js"></script>
+		<script src="run_html.js"></script>
+		<script src="run.js"></script>
+		<script src="1.js"></script>
+		<script src="bug.js"></script>
+		<script src="help.js"></script>
+
+	</body>
+	<script>
+	let p;
+        window.addEventListener('beforeinstallprompt',e=>{
+                e.preventDefault();
+                p=e;
+        });
+        function install(){
+                if(p){
+                        p.prompt();
+                }
+        }
+        if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('js.js');
+        }
+	</script>
+
+
+ 	<script>
+	window.addEventListener("message", function(event){
+
+	if(event.data === "HTML_CLOSE"){
+		document.getElementById("html_output").style.display="none";
+		document.getElementById("html_output").srcdoc="";
+		clear();
+	}
+
+});
+	</script>
+</html>
